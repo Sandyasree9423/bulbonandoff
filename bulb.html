@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>light bulb</title>
+    <style>
+        img{
+            height:500px;
+            background-color:bisque;
+        }
+        .bulb{
+            height: 500px;
+        }
+        button{
+            height: 80px;
+            width: 80px;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="turnon()">on</button>
+    <img id="bulb" src="HTML AND CSS/asset/b1.png">
+    <button onclick="turnoff()">off</button>
+    <script>
+        function turnon()
+        {
+            document.getElementById("bulb").src="HTML AND CSS/asset/b1.png"
+        }
+        function turnoff()
+        {
+            document.getElementById("bulb").src="HTML AND CSS/asset/offf.jpg"
+        }
+    </script>
+</body>
+</html>
